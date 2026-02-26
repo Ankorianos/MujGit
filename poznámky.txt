@@ -1,0 +1,13 @@
+být ve složce
+
+git init
+
+git add [název souboru]
+
+git status
+
+git commit NEBO git commit -m "[Název commitu - ne popis, jen název]"
+
+git log
+
+
