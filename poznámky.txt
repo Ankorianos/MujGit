@@ -1,6 +1,6 @@
 být ve složce
 
-git init
+git init []
 
 git add [název souboru]
 
@@ -8,6 +8,75 @@ git status
 
 git commit NEBO git commit -m "[Název commitu - ne popis, jen název]"
 
-git log
+.gitignore - definuej věci které nebude v repo (v powershellu ni)
+
+git tag [TAG] - nějaké významný body v historii projektu
+
+
+
+
+HISTORIE
+
+
+git log NEBO git log -n [číslo kolik]
+git log --oneline (jen hash a název)
+git log --stat (Ukáže jaké soubory se změnily a tak) NEBO + -p a tam mi to ukáže přímo názvy souborů
+git log -- <název souboru> (Ukáže změny daného souboru)
+git log --all --graph --oneline --decorate (celková historie i s větvemi)
+
+
+
+git branch (ukáže aktuální větev),
+git branch -a (všechny větve ukáže, i ty remote)
+git branch -a -v (poslední commit na každé větvi. bez -a když jen lokální)
+
+
+
+git show - pro zobrazení detailů commitu,
+
+git diff - pro porovnání změn.
+
+
+
+Nyní si ukážeme, jak použít příkaz reset --hard (soft do staging zony, mixed do zony před git add commandem a hard removne uplně ty comminity do toho daného) k obnovení našeho repozitáře do stavu před tím, než jsme vytvořili soubor testovaci_soubor.
+
+Spustíme příkaz git log a získáme hash commitu, na který chceme resetovat náš repozitář.
+Následně použijeme tento hash ve spojení s příkazem git reset --hard 036ea83da2afba28163a1f959a227cda7bd14a88 k obnovení repozitáře do příslušného stavu.
+Spuštěním příkazu git log uvidíme, že poslední commit byl smazán a společně s ním všechny změny.
+
+
+
+
+VĚTVĚ
+
+Větve jsou jedním z nejdůležitějších konceptů v Gitu. V Gitu jsou větve vytvářeny pro oddělení vývoje od hlavního vývojového stromu projektu. Každá větev představuje samostatný vývojový směr, v němž můžeme provádět změny nezávisle na jiných větvích. To umožňuje různým členům týmu pracovat na různých funkcích nebo opravách chyb současně, aniž by se navzájem ovlivňovali.
+
+git branch <název větve> (vytvoří novou větev - kopii větve, ve které aktuálně jsem)
+git branch -m <stara-vetev> <nova-vetev> (Přejmenování větve)
+git branch -d <název větve> (Smaže větev)
+git checkout <název větve> (přesune mě na jinou větev)
+git fetch -all (stáheme nejnovější vzdálené (github) commity)
+
+
+
+GIT MERGE
+
+Pro slučování větví máme v Gitu příkaz git merge, který slouží k integraci změn z jedné větve do jiné, čímž se spojí historie obou větví. Tento proces je nezbytný zejména při spolupráci v týmu, kdy různí členové pracují na různých větvích projektu a později se musí jejich práce sloučit do hlavního kódu.
+
+Při použití příkazu git merge <název_větve> se obsah a změny ze slučované větve začlení do cílové větve. Git se snaží provést sloučení automaticky, pokud nedochází ke konfliktům v kódu. Pokud však konflikty nastanou, Git upozorní uživatele, jemuž umožní problémy ručně vyřešit.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
