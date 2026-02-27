@@ -92,8 +92,13 @@ Dojde-li ke kolizi, Git označí soubory, ve kterých se konflikt vyskytl. Soubo
 
 
 
-SPOJEN LOKLÍ SE VZDÁLENÝM (LOKÁLNÍ JE VYTVOŘENÝ A DÁVÁME TO NA VZDÁLENÝ - narozdíl od git clone)
+SPOJENÍ LOKÁLNÍ SE VZDÁLENÝM (LOKÁLNÍ JE VYTVOŘENÝ A DÁVÁME TO NA VZDÁLENÝ - narozdíl od git clone)
+
+Seznam odkazů na vzdálené repozitáře vyvoláme příkazem git remote. Bez parametrů zobrazí seznam všech odkazů. Je-li repozitář naklonovaný, bude již obsahovat odkaz na zdroj s názvem origin, ze kterého repozitář pochází. Těchto odkazů bychom si mohli vytvořit libovolné množství. Na vzdáleném repozitáři může existovat více větví. K větvím na serveru přistupujeme přes odkaz. Seznam větví na serveru získáme příkazem git remote show <název-zdroje>.
 
 
 
 
+
+
+asd
