@@ -56,6 +56,7 @@ git branch -m <stara-vetev> <nova-vetev> (Přejmenování větve)
 git branch -d <název větve> (Smaže větev)
 git checkout <název větve> (přesune mě na jinou větev)
 git fetch -all (stáheme nejnovější vzdálené (github) commity)
+git checkout -- [nazev_souboru] ()
 
 
 
@@ -98,7 +99,4 @@ Seznam odkazů na vzdálené repozitáře vyvoláme příkazem git remote. Bez p
 
 
 
-
-
-
-asd
+Úprava moje yoyo
