@@ -66,12 +66,29 @@ Pro slučování větví máme v Gitu příkaz git merge, který slouží k inte
 Při použití příkazu git merge <název_větve> se obsah a změny ze slučované větve začlení do cílové větve. Git se snaží provést sloučení automaticky, pokud nedochází ke konfliktům v kódu. Pokud však konflikty nastanou, Git upozorní uživatele, jemuž umožní problémy ručně vyřešit.
 
 
+git merge [branch_name] (Jsem v hlavní a do branch_name dám tu kterou chci do té hlavní sloučit)
+pak smazat větev git branch -d [branch_name]
+
+
+Otevře se nám slučovací soubor. Do něj bychom mohli přidat odůvodnění sloučení větví. My tento soubor jen zavřeme stiskem klávesy Esc. Poté napíšeme příkaz :wq, čímž soubor uložíme a ukončíme editor. Vypíše se nám následující zpráva o provedených změnách sloučení:
+
+Tímto jsme pomocí 3-way merge úspěšně sloučili větev feature do větve 10.x.
 
 
 
+KOLIZE
+
+Kolize vznikají při slučování dvou větví. Kolize nastane, když se dvě větve současně pokoušejí upravit stejnou část kódu nebo soubor a Git nedokáže rozhodnout, kterou verzi použít.
+
+Kolize mohou vzniknout z následujících důvodů:
+	úpravy stejného řádku kódu,
+	smazání nebo přejmenování souborů,
+	změny v různých částech stejného souboru.
 
 
+Dojde-li ke kolizi, Git označí soubory, ve kterých se konflikt vyskytl. Soubory jsou označené jako nevyřešené změny neboli unmerged paths. V takovém případě je na vývojáři, aby konflikt vyřešil a určil, které změny mají být zachovány. Řešení kolizí je důležitou součástí správy verzí v Gitu a je nezbytné pro koordinaci vývoje projektu v týmu.
 
+Řešení : Po merge dát git status, tam mi to řekne v jakém souboru pracovali 2 lidi najednou, poté edit toho souboru, budou tam značky <<<<< >>>>>>> a tak, to vše smazat a podívat se na to sám, upravit t o tak jak chceme a potom uložit soubor a dát git commit -m a třeba Oprava kolize nebo tak
 
 
 
