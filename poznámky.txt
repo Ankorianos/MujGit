@@ -92,7 +92,7 @@ Dojde-li ke kolizi, Git označí soubory, ve kterých se konflikt vyskytl. Soubo
 
 
 
-
+SPOJEN LOKLÍ SE VZDÁLENÝM (LOKÁLNÍ JE VYTVOŘENÝ A DÁVÁME TO NA VZDÁLENÝ - narozdíl od git clone)
 
 
 
