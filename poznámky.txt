@@ -116,6 +116,26 @@ git push [zdroj] [název lokální větve]:[název větve na vzdáleném serveru
 
 
 
+KDYŽ CHYBA A REP != LOCAL
+
+1. FETCH a MERGE
+Příkaz slouží ke stahování nových dat ze vzdáleného úložiště, aniž je integruje do našich pracovních souborů. Umožňuje nám získat informace o změnách, nových větvích či commit zprávách, aniž jakkoli narušuje naši pracovní kopii.
+
+Syntaxe příkazu git fetch je následující:
+git fetch [název-zdroje] [větev]
+
+Pro stažení všech registrovaných vzdálených repozitářů a jejich větví bychom použili příkaz git fetch ve formátu:
+git fetch --all
+
+Po stažení aktualizací příkazem git fetch bychom se přepnuli na staženou větev a následně větve sloučili příkazem git merge.
+
+
+2.
+
+
+
+
+
 
 
 
