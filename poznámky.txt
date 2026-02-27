@@ -98,5 +98,41 @@ SPOJENÍ LOKÁLNÍ SE VZDÁLENÝM (LOKÁLNÍ JE VYTVOŘENÝ A DÁVÁME TO NA VZD
 Seznam odkazů na vzdálené repozitáře vyvoláme příkazem git remote. Bez parametrů zobrazí seznam všech odkazů. Je-li repozitář naklonovaný, bude již obsahovat odkaz na zdroj s názvem origin, ze kterého repozitář pochází. Těchto odkazů bychom si mohli vytvořit libovolné množství. Na vzdáleném repozitáři může existovat více větví. K větvím na serveru přistupujeme přes odkaz. Seznam větví na serveru získáme příkazem git remote show <název-zdroje>.
 
 
+Vytvoření repozitáře na githubu
+Vytvoření issue
 
-Úprava moje yoyo
+Odkaz se tvoří příkazem git remote ve formátu git remote add <název-zdroje> <url repozitáře>. Url našeho vzdáleného repozitáře mujgit získáme ze sekce Quick setup repozitáře mujgit. V této sekci si vybereme protokol HTTPS a z pravého pole si zkopírujeme do schránky odkaz k našemu repozitáři: 
+
+git remote add (origin nebo kubap, prostě odkud) a odkaz
+
+
+
+
+ZASLÁNÍ
+
+Pro nahrání souborů do vzdáleného repozitáře v Gitu slouží příkaz git push. Příkaz pošle aktuální větev na server. Pokud na serveru větev se zadaným jménem již existuje, příkaz ji aktualizuje, jinak ji vytvoří. Chceme-li poslat větev, která má na serveru jiné jméno, použijeme příkaz ve formátu:
+
+git push [zdroj] [název lokální větve]:[název větve na vzdáleném serveru] - git push origin master(nebo jak se jmenuje větev)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
